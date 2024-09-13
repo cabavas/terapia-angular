@@ -1,0 +1,21 @@
+.container {
+    background-color: rgb(172, 216, 255);
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+ul > li {
+    list-style: none;
+}
+
+.custom-fab {
+    background-color: transparent;
+    color: black;
+    border-radius: 0;
+    border: none;
+    box-shadow: none !important;
+}

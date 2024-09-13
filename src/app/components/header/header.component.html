@@ -8,17 +8,17 @@
                 <mat-icon>menu</mat-icon>
             </button>
             <mat-menu #menu="matMenu">
-                <button mat-menu-item routerLink="/patients">Pacientes</button>
-                <button mat-menu-item routerLink="/sessions">Sessões</button>
-                <button mat-menu-item routerLink="/reports">Relatórios</button>
+                <button mat-menu-item routerLink="/patients" routerLinkActive="active-link">Pacientes</button>
+                <button mat-menu-item routerLink="/sessions" routerLinkActive="active-link">Sessões</button>
+                <button mat-menu-item routerLink="/reports" routerLinkActive="active-link">Relatórios</button>
                 <button mat-menu-item [matMenuTriggerFor]="profile">Perfil</button>
             </mat-menu>
             <nav class="nav-menu">
                 <ul>
-                    <li><a routerLink="/patients">Pacientes</a></li>
-                    <li><a routerLink="/sessions">Sessões</a></li>
-                    <li><a routerLink="/reports">Relatórios</a></li>
-                    <li><button mat-button [matMenuTriggerFor]="profile">Perfil</button></li>
+                    <li><a routerLink="/patients" routerLinkActive="active-link">Pacientes</a></li>
+                    <li><a routerLink="/sessions" routerLinkActive="active-link">Sessões</a></li>
+                    <li><a routerLink="/reports" routerLinkActive="active-link">Relatórios</a></li>
+                    <li><button mat-button [matMenuTriggerFor]="profile" routerLinkActive="active-link">Perfil</button></li>
                     <mat-menu #profile="matMenu">
                         <button mat-menu-item [routerLink]="['/profile']" routerLinkActive="router-link-active">Editar
                             perfil</button>

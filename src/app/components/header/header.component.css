@@ -1,6 +1,6 @@
 /* Estilos gerais para o container e a header */
 .container {
-    background-color: black;
+    background-color: rgb(172, 216, 255);
 }
 
 .row {
@@ -31,7 +31,7 @@
     display: none;
     background: none;
     border: none;
-    color: aliceblue;
+    color: black;
     font-size: 24px;
     cursor: pointer;
 }
@@ -53,23 +53,28 @@ ul > li > button {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: aliceblue;
+    color: black;
     height: 100%;
     padding: 45px 20px;
     transition: background-color 0.3s ease-in-out;
     background: none;
     border: none;
     cursor: pointer;
+    font: inherit;
     border-radius: 0;
 }
 
 ul > li > a:hover,
 ul > li > button:hover {
-    background-color: #424242;
+    background-color: rgb(124, 194, 255);
 }
 
 mat-menu-item > li > a {
 text-decoration: none;
+}
+
+.active-link {
+    background-color: rgb(124, 194, 255) !important;
 }
 
 /* Exibir menu hamburguer e ocultar menu normal em telas pequenas */

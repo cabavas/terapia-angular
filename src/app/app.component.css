@@ -1,3 +1,28 @@
 body, html {
     background-color: black!important;
+    height: 100vh;
+    margin: 0;
 }
+
+app-sidebar {
+    width: 80px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+}
+
+app-footer {
+    background-color: rgb(172, 216, 255);
+    color: black;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+  
