@@ -1,0 +1,86 @@
+/* Estilos gerais para o container e a header */
+.container {
+    background-color: black;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para o logo */
+.logo > img {
+    height: 105px;
+    cursor: pointer;
+}
+
+/* Estilos para a navegação */
+.nav {
+    position: relative;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para o menu hamburguer */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: aliceblue;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Estilos para a lista de navegação */
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul > li > a,
+ul > li > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: aliceblue;
+    height: 100%;
+    padding: 45px 20px;
+    transition: background-color 0.3s ease-in-out;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+ul > li > a:hover,
+ul > li > button:hover {
+    background-color: #424242;
+}
+
+mat-menu-item > li > a {
+text-decoration: none;
+}
+
+/* Exibir menu hamburguer e ocultar menu normal em telas pequenas */
+@media (max-width: 500px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Adicione estilos para o menu hamburguer se necessário */
+}

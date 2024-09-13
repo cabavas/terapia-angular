@@ -1,1 +1,31 @@
-<p>header works!</p>
+<div class="container">
+    <div class="row">
+        <div class="logo">
+            <img (click)="navigate()" src="assets/images/logo.png" alt="">
+        </div>
+        <div class="nav">
+            <button [matMenuTriggerFor]="menu" class="menu-toggle" mat-fab aria-label="Example icon button with a menu icon">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item routerLink="/patients">Pacientes</button>
+                <button mat-menu-item routerLink="/sessions">Sessões</button>
+                <button mat-menu-item routerLink="/reports">Relatórios</button>
+                <button mat-menu-item [matMenuTriggerFor]="profile">Perfil</button>
+            </mat-menu>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a routerLink="/patients">Pacientes</a></li>
+                    <li><a routerLink="/sessions">Sessões</a></li>
+                    <li><a routerLink="/reports">Relatórios</a></li>
+                    <li><button mat-button [matMenuTriggerFor]="profile">Perfil</button></li>
+                    <mat-menu #profile="matMenu">
+                        <button mat-menu-item [routerLink]="['/profile']" routerLinkActive="router-link-active">Editar
+                            perfil</button>
+                        <button mat-menu-item (click)="logout()">Sair</button>
+                    </mat-menu>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
